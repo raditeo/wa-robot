@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cosmic-tenure-358108",
+  "private_key_id": "93e71d7716e1e10c9ab180dbfa95e28e35e7d8ec",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDNfyKruCwOErCR\nUcZuR7ADoQrV5jImqaJyBTrECLKqHY784cO35dWzOal1KKcdjXpMIFrkOsnmTkku\n0X656KdsTleK+ngMkLVNYLLq5sxSEiNcr1Lb8RJ3Irnt6Yj+EmBG+nF7V7E9f622\n36O+dD2dWhX7MXq+sbZwAupBA8KkWY/N/u6QTpeLgL+QYpDSMuERPy3spBNz1XHv\n+B723Exb9WuCkU+M2ue3SAmHKgyQ8Om0HaG6goHvcUZWUIWNQtElyT0228fXAawE\nN+NH0ywncyX/079B5tvm03KZuARO2uXC236sXZjjtneLlA08V1ahMTytMFauVIuF\ncrTp3dLVAgMBAAECggEAPFaHLJqgPOWZ+KFlPT5JXVds4g98TEPk0cvdTHAtXave\nLzxvBlEy5TQaIK92GkRPU4jwhzEH1VrJPDkBF79LYY7DP6h5lV7sDTNGdZidB8AR\nqAZGsxPe0yJcK5I1yjxFDrI8nfXKsf8KV7bk0mg5KzmnWKFXpCR0KAGDHOHoxe6K\n/pDz0VkRBUhPYOC0BAcT2oWJ0Is8SZ9r7dqxhe09f3l+O5Sxgo2Yil8IXDQYcFfr\nUumSt0A2XZAanC4xcIsf6PHo6oaHn7OMDq86p268gbeKOW6WYLaXj5pN7bNrJaDM\nhYxPqsCu/wepfAjqxTyiu0pHecxyGGnJIGQYYFkuxQKBgQD7JGIiOdMN9GFH3x6X\n/JJgkYOmypiRbZ3ENB1rYKfSwXAZeFjDRF4vkP6xZj+hskrMe3n1bwdfPwoz/opB\nWfI6MYkMwrCs/tHBBoBC7wMMaCzpDEoWzA9doyd6W6y1aN8QzsR2ECae19WiOWG4\niZ/WkSHZSob/E/aciZZkERmr9wKBgQDReLkCiE5M71Ir/iissEheGfEi+5xArd9g\nLw3+tB1O0r3dSX5WTrLS1j6qQvCpXSkojt/PWh2oGZZj2ZEBDDVMTpjzzBJ9x6Kj\nNyUVV75Whm1/Y7qeGy21tf2o35WdIsgXpx4wJcFgdfqAlOHEZ+fVGZXWP0MGrfAh\n2q2621OMkwKBgQDj1t4wrsUKo+qdiY331Ov3MAyABMzlIs0+cwk9oTKfwV4xvTzJ\n6fyIqsJlrp2L1HSHjn3WbCQEBOz8vrAvGarnoIj1Sqt+Rq+ErqEuGChr2RblVoDg\nrcBC8wGdwA2vhrTYSr1xXrWq5aSqx+Qfxrt7ra9HspVGVJYm7avCnMDtgQKBgQCY\nk05vQcmG0GsSEDagUmbj5BF4Yb0Wf49NB/kxpRAT8fzJylZzly8500Qh0FBrjKgG\nGst6xTEE2F5qrHaqRLIturI+Ik71vwv/xpMEUL0bWR84wvOTZkiNKtpwvyrDIiqM\nz/V1LIsGL+ke71LjNKvw1IoHXFz96IQYpKgWitr4cQKBgQCaoIhCvyl6mZz8hcdp\n7XBhpDiBUBgK+v4qn4YY6F19kk5lFaSAQoGBtZ7wtHdLYxuUN8aGF1B6fLXOb8Zk\n0BZLFOY/zZ1jGNE5Bc/y1kt3ooR623Rmc817mTliIasrh1BEdMKZI2QO+ewzuoQL\nSFXRbZtwFJcfL4LB4hBnYngCJQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "whatsapp-auto@cosmic-tenure-358108.iam.gserviceaccount.com",
+  "client_id": "114410044188350559037",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/whatsapp-auto%40cosmic-tenure-358108.iam.gserviceaccount.com"
+}

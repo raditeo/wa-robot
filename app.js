@@ -1,6 +1,6 @@
 const qrcode = require('qrcode-terminal');
 
-const { Client } = require('whatsapp-web.js');
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const client = new Client({
     restartOnAuthFail: true,
     puppeteer: {

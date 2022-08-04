@@ -163,24 +163,24 @@ client.on('message', async msg => {
                             });
                         }
                     } else {
-                    readSpreadsheet(secrets.spreadsheet_id_informasi, "Pesan").then((response) => {
-                        if (response.length > 0) {
-                        const rows = response;
-                        rows.forEach((element, index) => {            
-                            if (index > 0 && element[0] == "greeting") {
-                            greeting = element[1];
+                        readSpreadsheet(secrets.spreadsheet_id_informasi, "Pesan").then((response) => {
+                            if (response.length > 0) {
+                            const rows = response;
+                            rows.forEach((element, index) => {            
+                                if (index > 0 && element[0] == "greeting") {
+                                greeting = element[1];
+                                }
+                            });
+                
+                            message = greeting;
+                        
+                            msg.reply(message);
+                            } else {
+                            message = greeting;
+                        
+                            msg.reply(message);
                             }
                         });
-            
-                        message = greeting;
-                    
-                        msg.reply(message);
-                        } else {
-                        message = greeting;
-                    
-                        msg.reply(message);
-                        }
-                    });
                     }
                 } else {
                     msg.reply(message);
@@ -200,35 +200,44 @@ client.on('message', async msg => {
 client.initialize();
 
 io.on('connection', function(socket) {
+    var stayAlive;
     socket.emit('message', 'Connecting...');
   
     client.on('qr', (qr) => {
-      console.log('QR RECEIVED', qr);
-      qrcode.toDataURL(qr, (err, url) => {
-        socket.emit('qr', url);
-        socket.emit('message', 'QR Code received, scan please!');
-      });
+        console.log('QR RECEIVED', qr);
+        qrcode.toDataURL(qr, (err, url) => {
+            socket.emit('qr', url);
+            socket.emit('message', 'QR Code received, scan please!');
+        });
     });
   
     client.on('ready', () => {
-      socket.emit('ready', 'Whatsapp is ready!');
-      socket.emit('message', 'Whatsapp is ready!');
+        socket.emit('ready', 'Whatsapp is ready!');
+        socket.emit('message', 'Whatsapp is ready!');
+        stayAlive = setInterval(() => {
+            client.pupPage.click("#pane-side");
+            socket.emit('message', 'Wake up!');
+            console.log('Wake up!');
+        }, 60000);
     });
   
     client.on('authenticated', () => {
-      socket.emit('authenticated', 'Whatsapp is authenticated!');
-      socket.emit('message', 'Whatsapp is authenticated!');
-      console.log('AUTHENTICATED');
+        socket.emit('authenticated', 'Whatsapp is authenticated!');
+        socket.emit('message', 'Whatsapp is authenticated!');
+        console.log('AUTHENTICATED');
     });
   
     client.on('auth_failure', function(session) {
-      socket.emit('message', 'Auth failure, restarting...');
+        socket.emit('message', 'Auth failure, restarting...');
     });
   
     client.on('disconnected', (reason) => {
-      socket.emit('message', 'Whatsapp is disconnected!');
-      client.destroy();
-      client.initialize();
+        clearInterval(stayAlive);
+        console.log('DISCONNECTED: '.concat(reason));
+        socket.emit('disconnected', reason);
+        socket.emit('message', 'Whatsapp is disconnected!');
+        client.destroy();
+        client.initialize();
     });
   });
 

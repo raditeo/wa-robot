@@ -1,15 +1,11 @@
 {
   "dependencies": {
-    "axios": "^0.27.2",
     "express": "^4.17.1",
-    "express-fileupload": "^1.2.0",
-    "express-validator": "^6.9.2",
     "googleapis": "^105.0.0",
     "http": "0.0.1-security",
-    "mime-types": "^2.1.32",
     "qrcode": "^1.4.4",
     "socket.io": "^2.5.0",
-    "whatsapp-web.js": "^1.17.1"
+    "whatsapp-web.js": "latest"
   },
   "scripts": {
     "start": "node app.js"

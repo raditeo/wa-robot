@@ -234,7 +234,7 @@ io.on('connection', function(socket) {
     client.on('disconnected', (reason) => {
         clearInterval(stayAlive);
         console.log('DISCONNECTED: '.concat(reason));
-        socket.emit('disconnected', reason);
+        // socket.emit('disconnected', reason);
         socket.emit('message', 'Whatsapp is disconnected!');
         client.destroy();
         client.initialize();
